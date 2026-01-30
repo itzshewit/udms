@@ -1,0 +1,8 @@
+{
+  "name": "UDMS Pro – University Dormitory Management System",
+  "description": "Enterprise-grade, AI-assisted, and gamified dormitory management platform.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

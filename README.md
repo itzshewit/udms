@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# University Dormitory Management System (UDMS)
 
-# Run and deploy your AI Studio app
+An interactive frontend prototype exploring student housing workflows for a university setting.
 
-This contains everything you need to run your app locally.
+**AI Studio demo:** https://ai.studio/apps/drive/1PvM1iDc_WG0pv5p0HzWGtBoBdYsIU2YM
 
-View your app in AI Studio: https://ai.studio/apps/drive/1PvM1iDc_WG0pv5p0HzWGtBoBdYsIU2YM
+## What it demonstrates
 
-## Run Locally
+- Student, administrator, maintenance, and security workflows
+- Room occupancy, maintenance requests, visitor registration, and payment screens
+- Dashboard visualizations and role-based interface states
+- Gemini-assisted chat and maintenance-image analysis
 
-**Prerequisites:**  Node.js
+## Tech stack
 
+React 19 · TypeScript · Vite · Google GenAI SDK · Recharts
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Run locally
+
+**Requirements:** Node.js and npm.
+
+```bash
+npm install
+```
+
+Create `.env.local` in the project root and add a Gemini API key:
+
+```env
+GEMINI_API_KEY=your_api_key
+```
+
+Then run:
+
+```bash
+npm run dev
+```
+
+## Prototype notes
+
+The interface is backed by sample data in `constants.ts`; it is not connected to a production university database or payment service. Do not enter real student or payment information. Gemini-powered features require an API key. Keep keys out of Git and avoid exposing production credentials in a client-side build.
